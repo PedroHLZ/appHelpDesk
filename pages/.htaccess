@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /
+
+# Redirecionamento para páginas internas
+RewriteCond %{REQUEST_URI} ^/dashboard$
+RewriteRule ^dashboard$ /pages/dashboard.php [L]
